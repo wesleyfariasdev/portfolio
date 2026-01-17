@@ -4,218 +4,231 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wesley Farias - Portfólio</title>
+    <title>Wesley Farias - Engenheiro de Software Sênior</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Portfólio de Wesley Farias, Engenheiro de Software Sênior especializado em .NET moderno.">
 </head>
 
 <body>
-    <div class="main container">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">WF.DEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#Home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#xp">Experiência</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projectos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <button id="themeToggle" class="theme-toggle">
+                                <i class="fas fa-moon"></i>
+                                <span>DARK</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
         <main>
-            <!-- Cabeçalho -->
-            <div class="mb-5">
-                <h1>Wesley Farias</h1>
-                <p class="lead">
-                    Sou desenvolvedor de software, com foco em aplicações web, integrações entre
-                    sistemas, migração de sistemas legados, arquitetura de software e bancos de dados relacionais. 
+            <section id="Home" class="hero-section">
+                <h1 class="display-4">Olá, meu nome é Wesley Farias</h1>
+                <p>
+                    Engenheiro de Software Sênior especializado em .NET moderno, com foco em
+                    alta performance, escalabilidade e arquitetura de sistemas distribuídos.
+                    Experiência sólida com Clean Architecture, DDD, Microsserviços e cloud computing.
                 </p>
-                <div class="social-links">
-                    <a href="https://github.com/wesleyfariasdev" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/wesleymfarias/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.hackerrank.com/profile/wesleysousukee" target="_blank"><i
-                            class="fab fa-hackerrank"></i></a>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/wesleyfariasdev" target="_blank" class="btn"><i class="fab fa-github me-2"></i>GitHub</a>
+                    <a href="https://www.linkedin.com/in/wesleymfarias/" target="_blank" class="btn"><i class="fab fa-linkedin-in me-2"></i>LinkedIn</a>
                 </div>
-            </div>
+            </section>
 
-            <hr class="my-5">
+            <section id="xp">
+                <h2>Experiência</h2>
 
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-10">
-                    <!-- Tecnologias -->
-                    <h2>Tecnologias</h2>
-                    <div class="card p-4">
-                        <h5>Linguagens e Frameworks</h5>
-                        <div class="skills">
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">.NET Core</span>
-                            <span class="skill-tag">.NET 6/8</span>
-                            <span class="skill-tag">ASP.NET Core</span>
-                            <span class="skill-tag">Blazor</span>
-                            <span class="skill-tag">Web API</span>
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">Oracle Database</span>
-                            <span class="skill-tag">Dapper</span>
-                            <span class="skill-tag">Javascript</span>
-                            <span class="skill-tag">JQuery</span>
-                            <span class="skill-tag">Bootstrap 4.5</span>
-                            <span class="skill-tag">Bootstrap 5.2</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">RabbitMQ</span>
-                            <span class="skill-tag">Redis</span>
-                            <span class="skill-tag">Entity Framework Core</span>
-                            <span class="skill-tag">Xunit</span>
-                            <span class="skill-tag">Worker Services</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                            <span class="skill-tag">Azure</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">DevOps</span>
-                            <span class="skill-tag">DDD</span>
-                            <span class="skill-tag">Clean Architecture</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
+                <div class="experience-item">
+                    <h4 class="experience-title">Desenvolvedor .NET Sênior — LWSA (Vindi)</h4>
+                    <p class="experience-meta">Atualmente | CLT</p>
+                    <p>
+                        Atuo com integração de sistemas de pagamento de alta criticidade (PIX, TED, Boletos) com múltiplos bancos
+                        liquidantes, garantindo confiabilidade em transações financeiras. Estabeleci padrões de código
+                        e configurei ferramentas de observabilidade que aumentaram a visibilidade de falhas em produção.
+                        Mentoreio desenvolvedores júnior através de revisões de código e sessões de pair-programming.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 8/10, SQL Server, PostgreSQL, RabbitMQ, New Relic, Sentry</div>
                 </div>
-                <div class="col-lg-10">
-                    <!-- Experiência -->
-                    <h2>Experiência</h2>
-                    <div class="card p-4">
-                        <h3>Desenvolvedor FullStack .NET</h3>
-                        <p class="text-muted">Codeblox · 2024 - Presente · Remoto</p>
-                        <p class="fw-bold mb-0"> 2024 - Presente - Portal do Credenciado · Detran</p>
-                        <p>Participo da construção de um novo portal para o Detran SP, um sistema
-                            robusto e eficiente que processa milhares de requisições diariamente. Atuo com o
-                            desenvolvimento e sustentação do sistema em produção, é utilizado
-                            integração com Microsoft Azure. A aplicação utiliza instâncias de SQL Server e Dynamics
-                            CRM como principais bases de dados, Padrões de projeto (Unit of Work, Repository Pattern) e
-                            Integração entre sistemas.</p>
-                        <div class="skills">
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">.NET 8</span>
-                            <span class="skill-tag">Blazor</span>
-                            <span class="skill-tag">Web API</span>
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">EF Core</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">DDD</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                        </div>
-                    </div>
-                    <div class="card p-4">
-                        <h3>Consultor .NET FullStack</h3>
-                        <p class="text-muted">Farias Consultoria e Desenvolvimento de Software · 2024 - Presente ·
-                            Remoto</p>
-                        <p>Atuação como freelancer/consultor em projetos sob demanda para empresas de médio e grande
-                            porte, com foco em desenvolvimento fullstack utilizando a stack .NET.</p>
 
-                        <div class="mb-4">
-                            <div class="skills">
-                                <span class="skill-tag">C#</span>
-                                <span class="skill-tag">.NET 8</span>
-                                <span class="skill-tag">Blazor</span>
-                                <span class="skill-tag">Web API</span>
-                                <span class="skill-tag">EF Core</span>
-                                <span class="skill-tag">Dapper</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">CI/CD</span>
-                                <span class="skill-tag">RabbitMQ</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">Worker Services</span>
-                                <span class="skill-tag">DDD</span>
-                                <span class="skill-tag">SQL Server</span>
-                                <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">Oracle Database</span>
-                                <span class="skill-tag">Git</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card p-4">
-                        <h3>Desenvolvedor FullStack .NET</h3>
-                        <p class="text-muted">T2S Tecnologia · 2022 - 2024 · Remoto</p>
-                        <p class="fw-bold mb-0">2022 - 2024 - Data Recintos - Integração com a Receita Federal ·
-                            Santos
-                            Brasil</p>
-                        <p>
-                            Atuei no desenvolvimento de soluções para integração com a Receita Federal, projetei e
-                            implementei um sistema robusto e escalável para envio e recebimento de informações,
-                            garantindo alta disponibilidade e conformidade regulatória. Criei uma arquitetura
-                            flexível
-                            que conectou todas as filiais do cliente a múltiplas bases de dados, processando com
-                            eficiência mais de 2 milhões de requisições mensais. Desenvolvi Windows Services para
-                            extração de dados em segundo plano, otimizando o desempenho, e liderei a migração de uma
-                            base de código de .NET Core 3.1 para .NET 8, modernizando a infraestrutura e melhorando
-                            a
-                            performance. Meu trabalho resultou em maior confiabilidade operacional e satisfação do
-                            cliente. </p>
-                        <hr class="my-3">
-                        <p class="fw-bold mt-3 mb-0">2022 - 2022 - Sistema de Armazém Alfandegado · Santos Brasil
-                        </p>
-                        <p>
-                            Como desenvolvedor full stack, desempenhei um papel central na modernização de um
-                            sistema
-                            legado, migrando uma base de código de Visual Basic 6 para C# .NET. Entreguei uma
-                            solução
-                            mais robusta e confiável, incorporando novas funcionalidades que aprimoraram os
-                            processos do
-                            cliente e aumentaram a eficiência operacional. Minha abordagem garantiu uma transição
-                            suave,
-                            mantendo a continuidade do negócio e agregando valor com uma interface moderna e maior
-                            desempenho.
-                        </p>
-                        <div class="skills">
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">.NET Core 3.1 / 2.2</span>
-                            <span class="skill-tag">ASP.NET Core</span>
-                            <span class="skill-tag">.NET 6</span>
-                            <span class="skill-tag">.NET 8</span>
-                            <span class="skill-tag">Xunit</span>
-                            <span class="skill-tag">Web API</span>
-                            <span class="skill-tag">SQL Server</span>
-                            <span class="skill-tag">Oracle Database</span>
-                            <span class="skill-tag">Dapper</span>
-                            <span class="skill-tag">Javascript</span>
-                            <span class="skill-tag">JQuery</span>
-                            <span class="skill-tag">Bootstrap 4.5</span>
-                            <span class="skill-tag">Worker Services</span>
-                            <span class="skill-tag">Azure DevOps</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
-
-                    <div class="card p-4">
-                        <h3>Analista T.I</h3>
-                        <p class="text-muted">ASAV · 2020 - 2022 · Presencial</p>
-                        <p class="fw-bold mb-0"> 2020 - 2022 - Sistema de cadastro de equipamentos e emprestimos · ESAR
-                        </p>
-                        <p>
-                            Responsável pelo design e estruturação de um sistema de gerenciamento de equipamentos.
-                            Desenvolvi funcionalidade de empréstimo de equipamento e implementei o serviço de
-                            notificação de atraso e vencimento. Eliminamos um processo que era feito em papel e levamos
-                            para web com Python e Django com Docker, Utilizei o banco de dados PostgreSQL e a plataforma
-                            Heroku e configurei o CI / CD. Realizei manutenção em sistemas legados escritos em .NET
-                            Framework utilizando C#.
-                        </p>
-                        <div class="skills">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">.NET Framework</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">Heroku</span>
-                            <span class="skill-tag">Bootstrap 4.6</span>
-                            <span class="skill-tag">Javascript</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
+                <div class="experience-item">
+                    <h4 class="experience-title">Desenvolvedor .NET Sênior — BMP Money Plus</h4>
+                    <p class="experience-meta">Atualmente | PJ Temporário</p>
+                    <p>
+                        Via Pasquali Solutions, atuo com o desenvolvimento do fluxo de empréstimo consignado utilizando microserviços na
+                        AWS, aplicando padrão SAGA para garantir consistência transacional. Mantive cobertura de testes
+                        superior a 80% e participei ativamente de code reviews, refimentos e escolhas de tecnologias.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 8, AWS (EventBridge, Lambda, S3, RDS, SQS e SNS), SQL Server, PostgreSQL</div>
                 </div>
-            </div>
+
+                <div class="experience-item">
+                    <h4 class="experience-title">Engenheiro de Software Sênior — PicPay</h4>
+                    <p class="experience-meta">6 meses | CLT Temporário</p>
+                    <p>
+                        Via Pathbit, desenvolvi e mantive microsserviços críticos que validam dados de cadastro para uma base de
+                        60 milhões de usuários, processando mais de 500 milhões de requisições diárias. Implementei
+                        consumers Kafka para processamento assíncrono e modelei banco de dados MySQL otimizado para
+                        alto volume transacional.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 8, Kafka, MongoDB, MySQL, Docker, SonarQube, New Relic, Argo</div>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="experience-title">Desenvolvedor FullStack .NET — CodeBlox</h4>
+                    <p class="experience-meta">2024 - 2024 | CLT</p>
+                    <p>
+                        Participo da construção do portal do Detran SP, processando milhares de requisições diárias.
+                        Desenvolvi arquitetura escalável e otimizações de performance integradas ao Microsoft Azure, utilizando SQL Server e Dynamics CRM.
+                        Atuei com uma esteira de deploys e pipelines de CI/CD no Azure DevOps, aplicando padrões como Unit of Work e Repository.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 8, Blazor (Server/WASM), Azure DevOps, SQL Server, Dynamics CRM</div>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="experience-title">Consultor .NET Full Stack Sênior — W F Consultoria</h4>
+                    <p class="experience-meta">1 ano | PJ</p>
+                    <p>
+                        Liderei o desenvolvimento do MVP de um ERP para PMEs, desde a concepção até o deploy.
+                        Defini toda a arquitetura baseada em Clean Architecture e DDD, escolhendo tecnologias que garantiram
+                        escalabilidade e facilidade de manutenção. Implementei pipelines de CI/CD com testes automatizados.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 8, Blazor Web App, PostgreSQL, Redis, Docker, Azure, RabbitMQ, Worker Services</div>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="experience-title">Desenvolvedor .NET Full Stack — T2S Tecnologia</h4>
+                    <p class="experience-meta">2022 - 2024 | CLT</p>
+                    <p>
+                        <strong>Data Recintos (Santos Brasil):</strong> Projetei sistema robusto para integração com a Receita Federal, processando 4 milhões
+                        de requisições mensais. Realizei otimização massiva que reduziu o tempo de processamento de 1 hora para 30 segundos (120x).
+                        Liderei a modernização do stack de .NET Core 3.1 para .NET 8.
+                        <br>
+                        <strong>Armazém Alfandegado (2022):</strong> Modernizei sistema legado migrando de Visual Basic 6 para .NET Core 3.1, 
+                        aumentando a produtividade operacional e flexibilidade da equipe.
+                    </p>
+                    <div class="stack-tag">Stack: .NET 6/8, Oracle DB, SQL Server, Azure DevOps, Dapper, jQuery, Bootstrap</div>
+                </div>
+
+                <div class="experience-item">
+                    <h4 class="experience-title">Analista T.I — ASAV, ESAR</h4>
+                    <p class="experience-meta">2 anos e 6 meses | CLT</p>
+                    <p>
+                        Digitalizei o processo manual de gerenciamento de equipamentos, eliminando o papel através de um sistema web completo.
+                        Utilizei Python e Django com Docker no Heroku, configurando pipelines de CI/CD. Também realizei manutenção em 
+                        sistemas legados em .NET Framework.
+                    </p>
+                    <div class="stack-tag">Stack: Python/Django, .NET Core (2.2, 3.1), PostgreSQL, SQL Server, Heroku, Docker</div>
+                </div>
+            </section>
+
+            <section id="tecnologias">
+                <h2>Tecnologias</h2>
+                <ul class="tech-list">
+                    <li><strong>Backend:</strong> C#, .NET 6/8/10, ASP.NET Core, Minimal APIs</li>
+                    <li><strong>Arquitetura:</strong> Clean Architecture, DDD, CQRS, Microsserviços, SAGA</li>
+                    <li><strong>Banco de Dados:</strong> SQL Server, PostgreSQL, MongoDB, MySQL, Oracle</li>
+                    <li><strong>Mensageria:</strong> RabbitMQ, Kafka, Amazon SQS, Amazon SNS</li>
+                    <li><strong>Frontend:</strong> Blazor (Server e WASM), HTML, CSS, Bootstrap, JavaScript/jQuery</li>
+                    <li><strong>Testes:</strong> xUnit, Moq, NSubstitute, Unit/Integration Testing</li>
+                    <li><strong>Cloud & DevOps:</strong> Microsoft Azure (foco), AWS, Azure DevOps, Docker, CI/CD</li>
+                    <li><strong>Observabilidade:</strong> New Relic, Sentry, SonarQube, ArgoCD</li>
+                </ul>
+            </section>
+
+            <section id="projectos">
+                <h2>Projetos</h2>
+                <div class="experience-item">
+                    <h4>ERP para Prestadores de Serviço</h4>
+                    <p>
+                        Plataforma completa com autenticação, controle financeiro e arquitetura escalável baseada em
+                        Clean Architecture e DDD. Focado em escalabilidade para PMEs.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h4>Plataformas Financeiras e Pagamentos</h4>
+                    <p>
+                        Microsserviços de alta performance para validação de dados, processamento financeiro
+                        e integração bancária crítica com PIX e TED.
+                    </p>
+                </div>
+                <div class="experience-item">
+                    <h4>Portais Governamentais e Corporativos</h4>
+                    <p>
+                        Sistemas robustos desenvolvidos com Blazor e .NET para ambientes críticos (ex: Detran SP) 
+                        com alto volume de acessos diários.
+                    </p>
+                </div>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>
+                    <strong>Email:</strong> wesleyfarias.dev@gmail.com<br />
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wesleymfarias/"
+                        target="_blank">linkedin.com/in/wesleymfarias</a><br />
+                    <strong>GitHub:</strong> <a href="https://github.com/wesleyfariasdev"
+                        target="_blank">github.com/wesleyfariasdev</a><br />
+                    <strong>Portfólio:</strong> <a href="https://wesleyfariasdev.github.io/portfolio/"
+                        target="_blank">wesleyfariasdev.github.io</a>
+                </p>
+            </section>
         </main>
 
-        <footer class="pt-5 text-center text-muted border-top mt-5">
-            Wesley Farias · © 2025
+        <footer>
+            <div class="container text-center">
+                Wesley Farias · © 2025
+            </div>
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.documentElement;
+        const icon = themeToggle.querySelector('i');
+        const span = themeToggle.querySelector('span');
+
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        updateToggleUI(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateToggleUI(newTheme);
+        });
+
+        function updateToggleUI(theme) {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun';
+                span.textContent = 'LIGHT';
+            } else {
+                icon.className = 'fas fa-moon';
+                span.textContent = 'DARK';
+            }
+        }
+    </script>
 </body>
 
 </html>
